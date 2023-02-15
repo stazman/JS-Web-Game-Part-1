@@ -28,6 +28,27 @@ newItem('sword','assets/sword.png', 'fixed', 500, 405)
 newItem('shield', 'assets/shield.png', 'fixed', 165, 185)
 newItem('wooden staff','assets/staff.png', 'fixed', 600, 100)
 
+
+
+function skyAndGrass(objName, url, position, left, bottom){
+	let object = newImage(objName, url, position, left, bottom)
+		for(let h = 0; h>windowHeight; h++){
+		}
+		document.body.append(object)
+}
+
+				let windowHeight =
+				window.innerHeight
+
+				let windowWidth = window.innerWidth
+
+let skyHeight = window.innerHeight-grassHeight
+let grassHeight =      window.innerHeight-skyHeight
+
+skyAndGrass('sky', 'assets/sky.png', 0, horizon, window.innerWidth/100, heightOfSky/100)
+skyAndGrass('grass','assets/grass.png', 0, 0, window.innerWidth/100, heightOfGrass/100)
+
+
 // let greenCharacter = document.createElement('img')
 // greenCharacter.src = 'assets/green-character.gif'
 // greenCharacter.style.position = 'fixed'
@@ -58,27 +79,6 @@ newItem('wooden staff','assets/staff.png', 'fixed', 600, 100)
 // 245
 // window.innerWidth
 // 1024
-
-function skyAndGrass(objName, url, position, left, bottom){
-	let object = newImage(objName, url, position, left, bottom)
-		for(let h = 0; h>windowHeight; h++){
-
-
-		}
-		document.body.append(object)
-}
-
-let windowHeight = window.innerHeight
-let windowWidth = window.innerWidth
-
-let skyHeight = window.innerHeight-grassHeight
-let grassHeight = window.innerHeight-skyHeight
-
-
-
-skyAndGrass('sky', 'assets/sky.png', 0, horizon, window.innerWidth/100, heightOfSky/100)
-skyAndGrass('grass','assets/grass.png', 0, 0, window.innerWidth/100, heightOfGrass/100)
-
 
 // skyAndGrass('grass', 'assets/grass.png', 'fixed', 0, 0)
 // skyAndGrass('sky', 'assets/sky.png', 'fixed', 0, 425)
